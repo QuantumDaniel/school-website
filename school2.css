@@ -1,0 +1,285 @@
+body {
+  background-color: antiquewhite;
+  margin: 0;
+  scrollbar-color: green;
+}
+
+.head {
+  background-color: blue;
+  left:0;
+  right:0;
+  display: flex;
+  flex-shrink: 1;
+
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  border-style: solid;
+  border-color: blue;
+  top: 0;
+  z-index: 100;
+  font-size: small;
+  position: fixed;
+}
+
+.circular-image {
+  border-radius: 30vw;
+  overflow: hidden;
+  width: 4.8vw;
+  height: 4.8vw;
+}
+
+.school-name {
+  position: absolute;
+  margin-top: -5px;
+  font-weight:bold;
+  margin-left:70px;
+}
+
+.image-animation {
+  z-index: 10;
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 75px;
+  border-style: solid;
+  border-color: blue;
+  border-width: 4px;
+  animation: image-animation 80s infinite;
+  top: -4px;
+  width: 1208.9px;
+}
+
+.group2{
+  color: yellow;
+  font-size:43px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.group1{
+  font-size:x-large;
+  color:white;
+}
+
+.motto {
+  display:flex;
+  width: 150px;
+  height: 15px;
+  margin-top: 40px;
+  background-color: red;
+  display: absolute;
+  border-style: none;
+  font-style: italic;
+  font-size:medium;
+}
+
+.footer {
+  height: 160px;
+  width: 1221px;
+  margin-top: 17.5px;
+  background-color: black;
+  color: white;
+  margin-left: -71px;
+}
+
+ul {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: antiquewhite;
+  border-bottom: solid;
+  z-index: 100;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+ul li {
+  margin: 0 auto;
+  padding: 10px 0;
+  flex: 1 1 auto;
+}
+
+@media (max-width: 1155px) {
+  .motto {
+    display: none;
+  }
+
+  .group1,.group2 {
+    font-size:32px;
+
+  }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+  .group1,.group2 {
+  font-size:15px;
+  margin-left:40px;
+  }
+  .motto{
+    display:none;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul li {
+    margin: 10px 0;
+  }
+
+  .image-animation {
+    z-index: 50;
+  }
+
+  .school-name {
+    font-size:hide;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .school-name {
+    font-size:5px;
+    margin-left:-1px;
+  }
+
+  .grid{
+    display:none;
+  }
+
+  .motto{
+    display:none;
+  }
+}
+
+ul li:hover {
+  background-color: yellow;
+  color: blue;
+  border-bottom: solid;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  padding: 0 20px;
+  font-family: Arial;
+}
+
+
+
+/*
+@media (min-width:500px){
+  .menu{
+    margin-left:500px;
+  }
+}
+  */
+.sub-body {
+  background-color: green;
+  height: 337px;
+  margin-top: 466px;
+  border-style: solid;
+  border-color: blue;
+  margin-left: -5px;
+  margin-right: -4px;
+}
+
+.items {
+  margin-top: 7px;
+  margin-left: 13px;
+  display: inline-block;
+  width: 250px;
+  height: 150px;
+  background-color: white;
+  border-style: solid;
+  border-color: blue;
+  border-radius: 20px;
+}
+
+.grid-display-item1 {
+  margin-left: 55px;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.grid-display-item2 {
+  margin-left: 90px;
+  z-index: 3;
+}
+
+.grid-display-item3 {
+  margin-left: 100px;
+}
+
+.grid-display-item4 {
+  margin-left: 120px;
+}
+
+.grid-button {
+  position: absolute;
+  background-color: red;
+  border-radius: 40px;
+  margin-left: 80px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  z-index: 5
+}
+
+.grid {
+  position: relative;
+  z-index: 1;
+  margin-left: 65px;
+}
+
+.next {
+  margin-top: 200px;
+  margin-left: 1164px;
+  position: absolute;
+}
+
+.previous {
+  margin-top: 200px;
+  position: absolute;
+}
+
+.image-click {
+  position: absolute;
+  width: 1000px;
+}
+
+@keyframes image-animation {
+  0% {
+    background-image: url('Image/Admistrative block.jpg');
+  }
+
+  30% {
+    background-image: url('Image/telescope logo.png');
+  }
+
+  50% {
+    background-image: url('Image/IMG_20240526_180109_087 (1) (1)@249234736.jpg');
+  }
+
+  60% {
+    background-image: url('Image/IMG_20240526_180029_262 (1) (1)@1351912044.jpg');
+  }
+
+  80% {
+    background-image: url('Image/IMG_20240526_182541_497 (5)@1394047752.jpg');
+  }
+
+  100% {
+    background-image: url('Image/IMG_20240526_180540_199 (1) (1)@333951753.jpg');
+  }
+}
